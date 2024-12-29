@@ -7,7 +7,7 @@
 <title>GameData Admin Login</title>
 
 <!--  favicon -->
-<link rel="shortcut icon" href="/gamedata-admin/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/gamedata-dashboard/favicon.ico" type="image/x-icon">
 
 <style>
 html, body {
@@ -154,19 +154,16 @@ html, body {
     <div class="gd-login-body">
     
       <div class="gd-login-top-message">
-        <h1>GameData Administration</h1> 
+        <h1>GameData DASHBOARD</h1> 
         <p>The following functions are available:</p>
         <ul>
-          <li>Creating and maintaining organizations</li>
-          <li>Creating and maintaining users</li>
-          <li>Allocating roles to users</li>
-          <li>Creating access tokens</li>
-          <li>Maintaining games and game versions</li>
+          <li>Viewing dashboards</li>
+          <li>Downloading data</li>
         </ul>
       </div>
 
       <div class="gd-login">
-        <form action="/gamedata-admin/login" method="post">
+        <form action="/gamedata-dashboard/login" method="post">
          <table>
            <tr>
              <td width="60px">&nbsp;</td>
@@ -181,7 +178,7 @@ html, body {
          </table>
          <br/>
          <span>
-           <input type="submit" value="ADMINISTRATOR LOGIN" class="gd-login-button" />
+           <input type="submit" value="DASHBOARD LOGIN" class="gd-login-button" />
          </span>
         </form>
       </div>

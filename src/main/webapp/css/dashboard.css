@@ -124,7 +124,7 @@ body {
   justify-content: space-between;
 }
 
-.gd-admin-form-buttons {
+.gd-dashboard-form-buttons {
   padding-top: 20px;
   display: flex;
   flex-direction: row;

@@ -2,9 +2,9 @@
 function initPage() {
 
   /* logged in? */
-  var rn = String("${adminData}");
+  var rn = String("${dashboardData}");
   if (rn.length == 0 || rn == "null") {
-    window.location = "/gamedata-admin/login";
+    window.location = "/gamedata-dashboard/login";
   }
 }
 

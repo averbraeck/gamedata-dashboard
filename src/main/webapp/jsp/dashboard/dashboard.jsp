@@ -9,34 +9,34 @@
     <title>GameData Administration</title>
 
     <!--  favicon -->
-    <link rel="shortcut icon" href="/gamedata-admin/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/gamedata-dashboard/favicon.ico" type="image/x-icon">
 
-    <link href="/gamedata-admin/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="/gamedata-admin/js/bootstrap.bundle.min.js"></script>
-    <link href="/gamedata-admin/css/fa.all.min.css" rel="stylesheet"/>
-    <script src="/gamedata-admin/js/admin.js"></script>
-    <link href="/gamedata-admin/css/admin.css" rel="stylesheet"/>
+    <link href="/gamedata-dashboard/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="/gamedata-dashboard/js/bootstrap.bundle.min.js"></script>
+    <link href="/gamedata-dashboard/css/fa.all.min.css" rel="stylesheet"/>
+    <script src="/gamedata-dashboard/js/dashboard.js"></script>
+    <link href="/gamedata-dashboard/css/dashboard.css" rel="stylesheet"/>
   </head>
 
   <body onload="initPage()">
     <div class="container-fluid">
       <div class="flex-nowrap">
         <header>
-          ${adminData.getSidebar()}
-          ${adminData.getNavbar()}
+          ${dashboardData.getSidebar()}
+          ${dashboardData.getNavbar()}
         </header>
         <main style="margin-top: 58px;">
           <div class="container-fluid ps-2 pe-2 pt-4">
-            ${adminData.getContent()}
+            ${dashboardData.getContent()}
           </div>
         </main>
       </div>
     </div>
     
     <!-- modal window for the client information within an order -->
-    ${adminData.getModalWindowHtml()}
+    ${dashboardData.getModalWindowHtml()}
 
-    <form id="clickForm" action="/gamedata-admin/admin" method="POST" style="display:none;">
+    <form id="clickForm" action="/gamedata-dashboard/dashboard" method="POST" style="display:none;">
       <input id="click" type="hidden" name="click" value="tobefilled" />
       <input id="recordId" type="hidden" name="recordId" value="0" />
     </form>
