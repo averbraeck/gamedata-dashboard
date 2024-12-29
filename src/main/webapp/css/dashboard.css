@@ -1,0 +1,242 @@
+body {
+  background-color: #fbfbfb;
+}
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.gd-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: stretch;
+  gap: 5px;
+}
+
+.gd-tab {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 5px;
+}
+
+.gd-tab-item {
+  border-style: solid;
+  border-width: 1px;
+  min-width: 120px;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-bottom: 3px;
+}
+
+.gd-tab-item-active {
+  border-color: #0d6efd;
+  background-color: #0d6efd;
+  color: white;
+}
+
+.gd-tab-item-inactive {
+  border-color: #bbbbbb; 
+}
+
+.gd-tab-choice {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bbbbbb;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.gd-tab-nochoice {
+  border-style: none;
+  border-width: 1px;
+}
+
+.gd-tab-choice-text {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.gd-tab-choice-close {
+  display: block;  
+}
+
+.gd-table-caption {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.gd-table-title {
+  padding-left: 8px;
+}
+
+.gd-col-icon {
+  width: 24px !important;
+  max-width: 24px !important;
+}
+
+.gd-form-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.gd-admin-form-buttons {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* ===================================== */
+/* MODAL WINDOWS WITH POP UP INFORMATION */
+/* ===================================== */
+
+/* modal background */
+.gd-modal {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 9; /* On top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* modal window close button */
+.gd-modal-close {
+  font-size: 2em;
+  font-weight: bold; 
+  padding-left: 10px;
+}
+
+.gd-modal-close:hover,
+.gd-modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* modal window definition for client */
+.gd-modal-window {
+  position: absolute;
+  z-index: 10;
+  display: block;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fefefe;
+  left: calc(50vw - 350px);
+  top: calc(50vh - 200px);
+  border: 1px solid #888;
+  width: 700px;
+  height: 400px;
+}
+
+/* modal window header for client */
+.gd-modal-window-header {
+  cursor: move;
+  display: flex;
+  background-color: orange;
+  width: 100%;
+  height: 40px;
+  padding-top: 2px;
+}
+
+.gd-modal-window-header > p {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.gd-modal-button-row {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.gd-modal-body {
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.gd-modal-text {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gd-modal-text > p {
+  text-align: center;
+  font-size: 1em;
+  font-style: normal;
+}
+
+.gd-button-small {
+  display: block;
+  flex-grow: 0;
+  width: 120px;
+  height: 24px;
+  background: navy;
+  font-size: 0.8em;
+  color: white;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
